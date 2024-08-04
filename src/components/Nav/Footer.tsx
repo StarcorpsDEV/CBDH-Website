@@ -1,6 +1,5 @@
 import type { FC } from "react";
-import { PaginationHelper } from "../PaginationHelper";
-import { PoweredBy } from "../PoweredBy";
+import { PaginationHelper } from "@/components/PaginationHelper";
 
 interface IProps {
   page: number;
@@ -34,7 +33,6 @@ export const Footer: FC<IProps> = ({
         setPage={setPage}
         loading={loading}
       />
-      <PoweredBy />
     </div>
   );
 };

@@ -1,13 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NFT Gallery</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta name="Author" content="Logicalwire"/>
+<meta name="description" content="The Collectif of the Badgers Diamond Hands is a NFTs collectors tool where you can mint and stake your NFTs to get ERC-20 tokens as reward."/>
+<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86, user-scalable=yes"/>
+
+<title id="pagetitle">Badgers Collectif</title>
+
+<link rel="icon" href="logo_mini.png" type="image/x-icon">
+<link rel="stylesheet" href="css/materialIcons.css">
+<link rel="stylesheet" type="text/css" href="css/materialize.css" />
+<link rel="stylesheet" type="text/css" href="css/freestyle.css" />
+<link rel="stylesheet" href="css/animate.css">
+
+<script type="text/javascript" src="js/jquerymin.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/mainFunctions.js"></script>
+<meta charset="UTF-8" />
+<title>Collectif of the Badgers Diamond hands</title>
+
+</head>
+<body class='theme'>
+<header id="header" class="page-topbar">
+<nav>
+<div class="nav-wrapper nav-theme">
+<a href="https://badgerscollectif.com" class="brand-logo"><img onclick="document.location='index'" style="margin:4px 24px 6px 24px;padding:8px;" class="responsive_background" width="64x" src="cbdh_logo.webp" alt="badgerscollectif"></a>
+<ul class="right hide-on-med-and-down">
+<li><a href="https://marketplace.badgerscollectif.com"><i class="material-icons left">account_balance</i>Marketplace</a></li>
+<li><a class="ddt" data-target="nfts_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">business</i>NFTs</a></li>
+<li><a class="ddt" data-target="daos_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">group_work</i>DAOs</a></li>
+<li><a class="ddt" data-target="support_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">info_outline</i>Settings</a></li>
+</ul>
+<a data-target="mobile_nav" class="sidenav-trigger right" onclick='openSideNav()'><i class="material-icons left">menu</i></a>
+</div>
+</nav>
+
+
+<ul id="mobile_nav" class="sidenav">
+    <li><a href="https://marketplace.badgerscollectif.com"><i class="material-icons">account_balance</i>Marketplace</a></li>
+    <li class="divider" style="width:100%"></li>
+    <li><a href="/DMFSB"><i class="material-icons" style="line-height:0"><img style="margin-top: 12px !important;" src="DMFSB_featured_image_icon.webp"></img></i>Diamond Badger</a></li>
+    <li><a href="/SMFSB"><i class="material-icons"><img style="margin-top: 12px !important;" src="SMFSB_featured_image_icon.webp"></img></i>Staked Badger</a></li>
+    <li><a href="/RPFSB"><i class="material-icons"><img style="margin-top: 12px !important;" src="RPFSB_featured_image_icon.webp"></img></i>Purple Badger</a></li>
+    <li><a href="/RGFSB"><i class="material-icons"><img style="margin-top: 12px !important;" src="RGFSB_featured_image_icon.webp"></img></i>Green Badger</a></li>
+    <li><a href="/RBFSB"><i class="material-icons"><img style="margin-top: 12px !important;" src="RBFSB_featured_image_icon.webp"></img></i>Blue Badger</a></li>
+    <li><a href="/RRFSB"><i class="material-icons"><img style="margin-top: 12px !important;" src="RRFSB_featured_image_icon.webp"></img></i>Red Badger</a></li>
+    <li><a href="/RLFBa"><i class="material-icons"><img style="margin-top: 12px !important;" src="https://nftstorage.link/ipfs/bafybeiay4hmhtxoie47v4xxjk4z6gnfov4qwebuztkr64jihlip3ww7al4/logo.gif"></img></i>Liquid Badgers α</a></li>
+    <li class="divider" style="width:100%"></li>
+    <li><a href="/manager/BFH"><i class="material-icons"><img src="iBFH.webp" style="margin-top: 12px !important;"></img></i>Fluids Holding</a></li>
+    <li><a href="/manager/BDT"><i class="material-icons"><img src="iBDT.webp" style="margin-top: 12px !important;"></img></i>Diamond Trust</a></li>
+    <li><a href="/manager/RPF"><i class="material-icons"><img src="iRPF.webp" style="margin-top: 12px !important;"></img></i>Refined Purple Fluid</a></li>
+    <li><a href="/manager/RGF"><i class="material-icons"><img src="iRGF.webp" style="margin-top: 12px !important;"></img></i>Refined Green Fluid</a></li>
+    <li><a href="/manager/RBF"><i class="material-icons"><img src="iRBF.webp" style="margin-top: 12px !important;"></img></i>Refined Blue Fluid</a></li>
+    <li><a href="/manager/RRF"><i class="material-icons"><img src="iRRF.webp" style="margin-top: 12px !important;"></img></i>Refined Red Fluid</a></li>
+    <li><a href="/manager/BPC"><i class="material-icons"><img src="iBPC.webp" style="margin-top: 12px !important;"></img></i>Presidency Council</a></li>
+
+    <li class="divider" style="width:100%"></li>
+    <li><a href="https://discord.gg/tmq28kMgvy" target="_blank"><i class="material-icons"><img style="margin-top: 14px !important;" src="discord.webp"></img></i>Discord</a></li>
+    <li><a onclick='changeColorTheme()'><i class="material-icons">tonality</i>Switch color theme</a></li>
+</ul>
+
+
+<ul id="daos_nav" class="dropdown-content" style="min-width:220px;">
+<li><a href="/manager/BFH"><i class="material-icons"><img src="iBFH.webp"></img></i>Fluids Holding</a></li>
+<li><a href="/manager/BDT"><i class="material-icons"><img src="iBDT.webp"></img></i>Diamond Trust</a></li>
+<li><a href="/manager/RPF" style="font-size: 15.8px !important;"><i class="material-icons"><img src="iRPF.webp"></img></i>Refined Purple Fluid</a></li>
+<li><a href="/manager/RGF"><i class="material-icons"><img src="iRGF.webp"></img></i>Refined Green Fluid</a></li>
+<li><a href="/manager/RBF"><i class="material-icons"><img src="iRBF.webp"></img></i>Refined Blue Fluid</a></li>
+<li><a href="/manager/RRF"><i class="material-icons"><img src="iRRF.webp"></img></i>Refined Red Fluid</a></li>
+<li><a href="/manager/BPC"><i class="material-icons"><img src="iBPC.webp"></img></i>Presidency Council</a></li>
+</ul>
+
+<ul id="nfts_nav" class="dropdown-content" style="min-width:220px;">
+    <li><a href="/DMFSB"><i class="material-icons"><img src="DMFSB_featured_image_icon.webp"></img></i>Diamond Badger</a></li>
+    <li><a href="/SMFSB"><i class="material-icons"><img src="SMFSB_featured_image_icon.webp"></img></i>Staked Badger</a></li>
+    <li><a href="/RPFSB"><i class="material-icons"><img src="RPFSB_featured_image_icon.webp"></img></i>Purple Badger</a></li>
+    <li><a href="/RGFSB"><i class="material-icons"><img src="RGFSB_featured_image_icon.webp"></img></i>Green Badger</a></li>
+    <li><a href="/RBFSB"><i class="material-icons"><img src="RBFSB_featured_image_icon.webp"></img></i>Blue Badger</a></li>
+    <li><a href="/RRFSB"><i class="material-icons"><img src="RRFSB_featured_image_icon.webp"></img></i>Red Badger</a></li>
+    <li><a href="/RFLBa"><i class="material-icons"><img src="https://nftstorage.link/ipfs/bafybeiay4hmhtxoie47v4xxjk4z6gnfov4qwebuztkr64jihlip3ww7al4/logo.gif"></img></i>Liquid Badgers α</a></li>
+</ul>
+
+<ul id="support_nav" class="dropdown-content" style="min-width:220px;">
+    <li><a href="https://discord.gg/tmq28kMgvy" target="_blank"><i class="material-icons"><img style="margin-top: 2px !important;" src="discord.webp"></img></i>Discord</a></li>
+    <li><a onclick='changeColorTheme()'><i class="material-icons">tonality</i>Switch color theme</a></li>
+</ul>
+</header>
+<main>
+<div class="section" id="mainContent">
+<div class="row">	
+<div class="col s12">
+<div class="animated bounceIn">
+<div class="">
+<div id="root"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="module" src="/src/main.tsx"></script>
+<script>app
+'use strict';
+</script>
 </html>
+
+
+
+
+</main>
+<div class="footer-copyright">
+<div class="page-footer" style="text-align:middle !important; vertical-align:middle">
+<footer style="padding:12px">
+<div class="center" style="text-align:middle !important">By using this service you agree with the <a class="pointer" onclick="document.location='https://thirdweb.com/privacy';">terms of use </a>and <a class="pointer" onclick="document.location='https://thirdweb.com/tos';"> privacy policy.</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    $(document).ready(function(){
+    $(".ddt").dropdown({hover:true,width:'100%'});
+    $('.sidenav').sidenav({edge:"left"});
+    $('.tooltipped').tooltip();
+    setColorTheme(themeColor);
+    $('.materialboxed').materialbox();
+
+    setTimeout(
+      () => {
+        $(document).ready(function(){
+          $('.carousel').carousel({
+            dist: -50,
+            shift:24,
+            padding:12,
+            numVisible:7,
+            duration:500,
+          });
+        });
+      }
+    ,1)
+    });
+</script>
+

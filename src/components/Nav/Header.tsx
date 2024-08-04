@@ -1,4 +1,4 @@
-import { client, nftContract } from "@/consts/parameters";
+import { client, DMFSBnftContract } from "@/consts/parameters";
 import { Link } from "react-router-dom";
 import { getContractMetadata } from "thirdweb/extensions/common";
 import { getNFT } from "thirdweb/extensions/erc721";
@@ -6,12 +6,12 @@ import { ConnectButton, useReadContract } from "thirdweb/react";
 
 export const Header: React.FC = () => {
   const { data: firstNFT, isLoading: nftLoading } = useReadContract(getNFT, {
-    contract: nftContract,
+    contract: DMFSBnftContract,
     tokenId: 1n,
   });
   const { data: contractMetadata, isLoading: contractLoading } =
     useReadContract(getContractMetadata, {
-      contract: nftContract,
+      contract: DMFSBnftContract,
     });
   return (
     <header className="mx-auto mb-12 flex w-full max-w-7xl items-center justify-between p-4">

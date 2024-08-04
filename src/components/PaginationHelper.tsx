@@ -64,7 +64,6 @@ const PaginationHelper: FC<IProps> = ({
           <button
             className="rounded-lg bg-white/5 px-4 py-2 text-white shadow-2xl"
             onClick={() => setPage(page + 1)}
-            disabled={page === noOfPages}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

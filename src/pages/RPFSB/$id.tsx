@@ -1,11 +1,13 @@
 import { HistoryCard } from "@/components/HistoryCard";
-import { Header } from "@/components/Nav/Header";
-import { PoweredBy } from "@/components/PoweredBy";
-import { client, nftContract } from "@/consts/parameters";
+import { client, RPFSBnftContract } from "@/consts/parameters";
 import { truncateAddress } from "@/utils/truncateAddress";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
+import RPFSBGallery from "@/components/gallery/NFTGalleryRPFSB"
+import { Breadcrumb } from "@/components/nav/Breadcrumb"
+import Carousel from "@/components/Carousel"
+
 import {
   MediaRenderer,
   useContractEvents,
@@ -17,14 +19,14 @@ import { getContractMetadata } from "thirdweb/extensions/common";
 const NFTPage = () => {
   const { id } = useParams();
   const { data: nft, isLoading } = useReadContract(getNFT, {
-    contract: nftContract,
+    contract: RPFSBnftContract,
     tokenId: BigInt(id as string),
   });
   const { data: contractMetadata } = useReadContract(getContractMetadata, {
-    contract: nftContract,
+    contract: RPFSBnftContract,
   });
   const { data: eventsData, isLoading: eventsLoading } = useContractEvents({
-    contract: nftContract,
+    contract: RPFSBnftContract,
     events: [
       transferEvent({
         tokenId: BigInt(id as string),
@@ -36,15 +38,17 @@ const NFTPage = () => {
   }, []);
 
   return (
-    <div className="m-0 min-h-screen bg-[#0A0A0A] p-0 font-inter text-neutral-200">
-      <Header />
+    <div>
+    <div className="card z-10 h-full rounded-xl bg-black/75 border-slate-800 border-2">
+    <div className="font-bold text-transparent transition bg-clip-text tw-gradient-purple">
 
       <Helmet>
         <title>{nft?.metadata.name}</title>
       </Helmet>
-
-      <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 md:flex-row">
-        <div className="flex flex-col px-10 md:min-h-screen md:w-1/2">
+      
+      <div className="card-content mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 md:flex-row ">
+        <div className="flex flex-col px-10 md:min-h-screen md:w-1/2 ">
+        <Breadcrumb url={"/RPFSB"} nftName={"Refined Purple Fluid"} nftId={String(id)}/>
           {nft ? (
             <MediaRenderer
               client={client}
@@ -82,7 +86,7 @@ const NFTPage = () => {
           <div className="flex flex-col">
             {contractMetadata?.name ? (
               <p className="text-lg font-semibold uppercase text-[#646D7A]">
-                collection
+                Collection
               </p>
             ) : (
               isLoading && (
@@ -104,9 +108,9 @@ const NFTPage = () => {
               #{id}
             </p>
 
-            {nft?.metadata.name ? (
+            {nft?.metadata.name && nft?.metadata.attributes ? (
               <p className="text-3xl font-bold text-white">
-                {String(nft?.metadata.name).split("#")[0]}
+                {Object(nft?.metadata.attributes[6]).value + " - " + Object(nft?.metadata.attributes[0]).value + " " + Object(nft?.metadata.attributes[7]).value}
               </p>
             ) : (
               isLoading && (
@@ -149,7 +153,7 @@ const NFTPage = () => {
             <div className="mt-2 h-8 w-1/2 animate-pulse rounded-lg bg-gray-800" />
           ) : (
             <p className="text-lg font-medium text-white">
-              {nft?.metadata.description}
+              {String(nft?.metadata.description).split("- Badgers Fluids Holding DAO:")[0]}
             </p>
           )}
 
@@ -203,14 +207,17 @@ const NFTPage = () => {
               </div>
             )}
           </div>
-
-          <div className="mb-8 mt-auto md:mb-40 md:w-full">
-            <PoweredBy />
-          </div>
         </div>
       </div>
+      <div className="mt-4 card-content flex flex-col gap-4">
+        <RPFSBGallery/>
+      </div>
+    </div>
+    </div>
+    <Carousel/>
     </div>
   );
+
 };
 
 export default NFTPage;

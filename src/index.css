@@ -1,5 +1,382 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(230deg 11.63% 17%);; 
+  border-radius: 6px;
+   box-shadow: inset 0 0 5px grey; 
+}
+::-webkit-scrollbar-track:hover {
+  background: #455a64; 
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(230deg 11.63% 8.43%);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #263238; 
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  --black: hsl(230deg 11.63% 8.43%);
+  --white: #ffffff;
+  --tw-color1: #f4aa11;
+  --tw-color1-hover: #fefbb0;
+}
+
+h2 {
+  font-size: 2rem;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tw-gradient-bronze{
+  text-shadow: #a66511 0 0 50px;
+	@apply bg-gradient-to-tl from-[#a66511] to-[#ff9c1a];
+}
+
+.tw-gradient-gold {
+  text-shadow: #fefbb0 0 0 50px;
+	@apply bg-gradient-to-tl from-[#fefbb0] to-[#f4aa11];
+}
+
+.tw-gradient-silver{
+  text-shadow: #dadada 0 0 50px;
+	@apply bg-gradient-to-tl from-[#dadada] to-[#747D83];
+}
+
+.tw-gradient-blue{
+  text-shadow: #74a2e3 0 0 50px;
+	@apply bg-gradient-to-tl from-[#74a2e3] to-[#255ba6];
+}
+
+.tw-gradient-red{
+  text-shadow: #ff8585 0 0 50px;
+	@apply bg-gradient-to-tl from-[#ff8585] to-[#96443F];
+}
+
+.tw-gradient-green{
+  text-shadow: #6aff97 0 0 50px;
+	@apply bg-gradient-to-tl from-[#6aff97] to-[#3F7A3B];
+}
+
+.tw-gradient-purple{
+  text-shadow: #bf85c8 0 0 50px;
+	@apply bg-gradient-to-tl from-[#bf85c8] to-[#783D82];
+}
+
+.pointer{
+	cursor: pointer;
+	}
+	
+.hover:hover{
+	background: #806868;
+	@apply bg-gradient-to-tl from-[#f4aa11] to-[#fefbb0];
+	color:hsl(230deg 11.63% 8.43%) !important;
+	font: weight 20px;
+}
+
+.hover:active{
+	@apply bg-gradient-to-tl from-[#fefbb0] to-[#f4aa11];
+}
+
+.embedFixedWidth{
+    width:calc(100vw - 186px) !important;
+    border: '1px solid #806868' !important;
+    border-radius: '12px' !important;
+ }
+
+ .orangeBorder{
+	border:100px !important;
+	border-color: #f4aa11 !important;
+	border-radius: '12px' !important;
+}
+
+  
+  .container {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    padding: 0 24px;
+  }
+  
+
+  
+  .btn_gradient_connect{
+    background:hsl(230deg 11.63% 8.43%) !important;
+    width: fit-content !important;
+    color:hsl(228, 100%, 94%) !important;
+     border-color: 1px solid hwb(228 15% 81%) !important;
+  }
+  
+  .btn_gradient_connect:hover{
+    background:hsl(55, 5%, 55%) !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+  }
+  
+  .btn_gradient_connect:active{
+    background:hsl(230deg 11.63% 8.43%) !important;
+    color:hsl(228, 100%, 94%) !important;
+  }
+  
+  .btn_gradient_bronze{
+    background:#ff9c1a !important;
+    width: fit-content !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+    border-color: 1px solid hwb(228 15% 81%) !important;
+    width: 300px !important;
+  }
+  
+  .btn_gradient_bronze:hover{
+    background: #a66511 !important;
+    color:hsl(228, 100%, 94%) !important;
+  }
+  
+  .btn_gradient_bronze:active{
+    background:#ff9c1a !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+  }
+
+  .btn_gradient_silver{
+    background:#747D83 !important;
+    width: fit-content !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+    border-color: 1px solid hwb(228 15% 81%) !important;
+    width: 300px !important;
+  }
+  
+  .btn_gradient_silver:hover{
+    background: #68747a !important;
+    color:hsl(228, 100%, 94%) !important;
+  }
+  
+  .btn_gradient_silver:active{
+    background:#747D83 !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+  }
+  .btn_gradient_grey{
+    background:#546e7a !important;
+    width: fit-content !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+    border-color: 1px solid hwb(228 15% 81%) !important;
+    width: 300px !important;
+  }
+  .btn_gradient_grey:hover{
+    background: #141D21 !important;
+    color:hsl(228, 100%, 94%) !important;
+  
+  }
+  
+  .btn_gradient_grey:active{
+    background:#546e7a !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+  }
+  
+  
+  .btn_gradient_gold{
+      background:#EFC25B !important;
+    width: fit-content !important;
+      color:hsl(230deg 11.63% 8.43%) !important;
+    border-color: 1px solid hwb(228 15% 81%) !important;
+    width: 300px !important;
+  }
+  
+  .btn_gradient_gold:hover{
+      background: #D3A63F !important;
+    color:hsl(228, 100%, 94%) !important;
+  }
+  
+  .btn_gradient_gold:active{
+      background:#EFC25B !important;
+      color:hsl(230deg 11.63% 8.43%) !important;
+  }
+  
+  .btn_gradient_blue{
+      background: #74a2e3 !important;
+    width: fit-content !important;
+      color:hsl(228, 12%, 8%) !important;
+    border-color: 1px solid hwb(228 15% 81%) !important;
+    width: 300px !important;
+  }
+  
+  .btn_gradient_blue:hover{
+      background: #062051 !important;
+    color:hsl(228, 100%, 94%) !important;
+  
+  }
+  
+  .btn_gradient_blue:active{
+      background:#4F6482 !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+  }
+  
+  .btn_gradient_red{
+      background: #96443F !important;
+    width: fit-content !important;
+      color:hsl(230deg 11.63% 8.43%) !important;
+    border-color: 1px solid hwb(228 15% 81%) !important;
+    width: 300px !important;
+  }
+  
+  .btn_gradient_red:hover{
+      background: #430903 !important;
+    color:hsl(228, 100%, 94%) !important;
+  
+  }
+  
+  .btn_gradient_red:active{
+      background:#96443F !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+  
+  }
+  
+  .btn_gradient_green{
+      background: #3F7A3B !important;
+    width: fit-content !important;
+      color:hsl(230deg 11.63% 8.43%) !important;
+    border-color: 1px solid hwb(228 15% 81%) !important;
+    width: 300px !important;
+  }
+  
+  .btn_gradient_green:hover{
+      background: #075017 !important;
+    color:hsl(228, 100%, 94%) !important;
+  
+  }
+  
+  .btn_gradient_green:active{
+      background:#3F7A3B !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+  
+  }
+  
+  .btn_gradient_purple{
+      background: #783D82 !important;
+    width: fit-content !important;
+      color:hsl(230deg 11.63% 8.43%) !important;
+    border-color: 1px solid hwb(228 15% 81%) !important;
+    width: 300px !important;
+  }
+  
+  .btn_gradient_purple:hover{
+      background: #41154D !important;
+    color:hsl(228, 100%, 94%) !important;
+  
+  }
+  
+  .btn_gradient_purple:active{
+      background:#783D82 !important;
+    color:hsl(230deg 11.63% 8.43%) !important;
+  
+  }
+  
+  
+  .h1 {
+    margin-bottom: 0px;
+  }
+  
+  .explain {
+    font-size: 1.125rem;
+    max-width: 1200px;
+  }
+  
+  .divider {
+    width: 66%;
+    border-color: 1px solid hsl(230deg 11.63% 17%);
+    opacity: 0.25;
+  }
+  
+  .smallDivider {
+    width: 33%;
+    border-color: 1px solid hsl(230deg 11.63% 17%);
+    margin-top: 64px;
+    opacity: 0.25;
+  }
+  
+  .nftBoxGrid {
+    width: 1200px;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  .nftBox {
+    padding: 6px;
+    border-radius: 12px;
+    border: 2px solid hsl(230deg 11.63% 17%);
+    background: hsl(230deg 11.63% 8.43%);
+    color:hsl(256, 6.0%, 93.2%);
+    font: weight 20px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
