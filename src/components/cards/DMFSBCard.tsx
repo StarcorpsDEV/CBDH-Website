@@ -1,6 +1,6 @@
 import  DMFSBGallery from "@/components/gallery/NFTGalleryDMFSB"
 import { STAKING_URL } from "@/consts/parameters";
-import { Breadcrumb } from "@/components/nav/Breadcrumb"
+import { Breadcrumb } from "@/components/Nav/Breadcrumb"
 export default function DMFSBCard({
 	children,
 	content,

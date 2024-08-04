@@ -1,6 +1,6 @@
 
 import { RRF_Staking_Pool_URL } from "@/consts/parameters";
-import { Breadcrumb } from "@/components/nav/Breadcrumb"
+import { Breadcrumb } from "@/components/Nav/Breadcrumb"
 
 export default function RRFCard({
 	children,

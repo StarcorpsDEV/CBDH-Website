@@ -1,4 +1,4 @@
-import { Footer } from "@/components/nav/Footer";
+import { Footer } from "@/components/Nav/Footer";
 import useDebounce from "@/hooks/useDebounce";
 import { SearchIcon } from "@/icons/SearchIcon";
 import { useEffect, useState } from "react";

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import RFLBaGallery from "@/components/gallery/NFTGalleryRFLBa"
-import { Breadcrumb } from "@/components/nav/Breadcrumb"
+import { Breadcrumb } from "@/components/Nav/Breadcrumb"
 import Carousel from "@/components/Carousel"
 
 import {

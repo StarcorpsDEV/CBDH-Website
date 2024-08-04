@@ -1,6 +1,6 @@
 import  RRFSBGallery from "@/components/gallery/NFTGalleryRRFSB"
 import { STAKING_URL } from "@/consts/parameters";
-import { Breadcrumb } from "@/components/nav/Breadcrumb"
+import { Breadcrumb } from "@/components/Nav/Breadcrumb"
 
 export default function RRFSBCard({
 	children,
