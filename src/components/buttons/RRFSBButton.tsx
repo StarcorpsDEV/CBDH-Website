@@ -7,7 +7,7 @@ export default function RRFSB(){
     <div>
       <a onClick={
       function (){
-          $("RRFSB").html(`
+          $("#RRFSB").html(`
           <embed src='${STAKING_URL}/RRFSB/mint' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -20,7 +20,7 @@ export default function RRFSB(){
 
       <a onClick={
          function (){
-          $("RRFSB").html(`<embed src='${STAKING_URL}/RRFSB/stake' style='width:100% !Important;min-height:700px !Important;'><embed>`)
+          $("#RRFSB").html(`<embed src='${STAKING_URL}/RRFSB/stake' style='width:100% !Important;min-height:700px !Important;'><embed>`)
         }
       } 
       style={{padding:"12px", paddingRight:"48px", paddingLeft:"48px", margin:"12px", border: '1px solid #806868', borderRadius: '12px'}}

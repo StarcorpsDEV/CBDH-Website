@@ -7,7 +7,7 @@ export default function BDT(){
     <div>
       <a onClick={
       function (){
-          $("BDT").html(`
+          $("#BDT").html(`
           <embed src='${BDT_Staking_Pool_URL}' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -19,7 +19,7 @@ export default function BDT(){
       </a>
       <a onClick={
          function (){
-          $("BDT").html(`
+          $("#BDT").html(`
           <div class='row'>
           <div class='relative items-center p-12'>
           <div class='col s12 m4' style='margin-bottom:60px;'>

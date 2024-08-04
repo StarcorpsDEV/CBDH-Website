@@ -7,7 +7,7 @@ export default function RGFSB(){
     <div>
       <a onClick={
       function (){
-          $("RGFSB").html(`
+          $("#RGFSB").html(`
           <embed src='${STAKING_URL}/RGFSB/mint' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -20,7 +20,7 @@ export default function RGFSB(){
 
       <a onClick={
          function (){
-          $("RGFSB").html(`
+          $("#RGFSB").html(`
            <embed src='${STAKING_URL}/RGFSB/stake' style='width:100% !Important;min-height:700px !Important;'><embed>
            `)
         }

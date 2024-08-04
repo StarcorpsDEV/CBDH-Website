@@ -7,7 +7,7 @@ export default function BPC(){
     <div>
       <a onClick={
       function (){
-          $("BPC").html(`
+          $("#BPC").html(`
           <embed src='${BPC_Staking_Pool_URL}' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -19,7 +19,7 @@ export default function BPC(){
       </a>
       <a onClick={
          function (){
-          $("BPC").html(`
+          $("#BPC").html(`
           <div class='row'>
           <div class='relative items-center p-12'>
           <div class='col s12 m4' style='margin-bottom:60px;'>

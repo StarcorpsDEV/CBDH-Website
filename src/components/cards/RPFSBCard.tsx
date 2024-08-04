@@ -32,7 +32,7 @@ export default function RPFSBCard({
 					style={{width:"33%", marginLeft:"33%", border: '1px solid #f4aa11', borderRadius: '12px'}}
 					onClick={
 						function (){
-							$("RPFSB").html(`
+							$("#RPFSB").html(`
 							<embed src='${STAKING_URL}/RPFSB/mint' style='width:100% !Important; min-height:700px !Important;'>
 							</embed>
 							`)

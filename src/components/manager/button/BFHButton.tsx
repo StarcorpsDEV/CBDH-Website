@@ -8,7 +8,7 @@ export default function BFH(){
     <div>
       <a onClick={
       function (){
-          $("BFH").html(`
+          $("#BFH").html(`
           <embed src='${BFH_Staking_Pool_URL}' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -20,7 +20,7 @@ export default function BFH(){
       </a>
       <a onClick={
          function (){
-          $("BFH").html(`
+          $("#BFH").html(`
           <div class='row'>
           <div class='relative items-center p-12'>
           <div class='col s12 m4' style='margin-bottom:60px;'>

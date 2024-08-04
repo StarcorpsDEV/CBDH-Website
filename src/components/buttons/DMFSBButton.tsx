@@ -7,7 +7,7 @@ export default function DMFSB(){
     <div>
       <a onClick={
       function (){
-          $("DMFSB").html(`
+          $("#DMFSB").html(`
           <embed src='${STAKING_URL}/DMFSB/mint' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -20,7 +20,7 @@ export default function DMFSB(){
 
       <a onClick={
          function (){
-          $("DMFSB").html(`
+          $("#DMFSB").html(`
           <embed src='${STAKING_URL}/DMFSB/stake' style='width:100% !Important;min-height:700px !Important;'><embed>
           `)
         }

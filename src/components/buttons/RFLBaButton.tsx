@@ -7,7 +7,7 @@ export default function RFLBa(){
     <div>
       <a onClick={
       function (){
-          $("RFLBa").html(`
+          $("#RFLBa").html(`
           <embed src='${STAKING_URL}/RFLBa/mint' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -20,7 +20,7 @@ export default function RFLBa(){
 
       <a onClick={
          function (){
-          $("RFLBa").html(`
+          $("#RFLBa").html(`
             <embed src='${STAKING_URL}/RFLBa/stake' style='width:100% !Important;min-height:700px !Important;'><embed>
             `)
         }

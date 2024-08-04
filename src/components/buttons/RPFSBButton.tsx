@@ -7,7 +7,7 @@ export default function RPFSB(){
     <div>
       <a onClick={
       function (){
-          $("RPFSB").html(`
+          $("#RPFSB").html(`
           <embed src='${STAKING_URL}/RPFSB/mint' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -20,7 +20,7 @@ export default function RPFSB(){
 
       <a onClick={
          function (){
-          $("RPFSB").html(`
+          $("#RPFSB").html(`
           <embed src='${STAKING_URL}/RPFSB/stake' style='width:100% !Important;min-height:700px !Important;'><embed>
           `)
         }

@@ -7,7 +7,7 @@ export default function RBFSB(){
     <div>
       <a onClick={
       function (){
-          $("RBFSB").html(`
+          $("#RBFSB").html(`
           <embed src='${STAKING_URL}/RBFSB/mint' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -20,8 +20,8 @@ export default function RBFSB(){
 
       <a onClick={
          function (){
-          $("RBFSB").html(`
-            <embed src='"+STAKING_URL+"/RBFSB/stake' style='width:100% !Important;min-height:700px !Important;'><embed>
+          $("#RBFSB").html(`
+            <embed src='${STAKING_URL}/RBFSB/stake' style='width:100% !Important;min-height:700px !Important;'><embed>
             `)
         }
       } 

@@ -7,7 +7,7 @@ export default function RRF(){
     <div>
       <a onClick={
       function (){
-          $("RRF").html(`
+          $("#RRF").html(`
           <embed src='${RRF_Staking_Pool_URL}' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -19,7 +19,7 @@ export default function RRF(){
       </a>
       <a onClick={
          function (){
-          $("RRF").html(`
+          $("#RRF").html(`
           <div class='row'>
           <div class='relative items-center p-12'>
           <div class='col s6 m12' style='margin-bottom:60px;'>

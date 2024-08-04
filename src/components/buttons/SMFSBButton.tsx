@@ -7,7 +7,7 @@ export default function SMFSB(){
     <div>
       <a onClick={
       function (){
-          $("SMFSB").html(`
+          $("#SMFSB").html(`
           <embed src='${STAKING_URL}/SMFSB/mint' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
@@ -20,7 +20,7 @@ export default function SMFSB(){
 
       <a onClick={
          function (){
-          $("SMFSB").html(`<embed src='${STAKING_URL}+/SMFSB/stake' style='width:100% !Important;min-height:700px !Important;'><embed>`)
+          $("#SMFSB").html(`<embed src='${STAKING_URL}/SMFSB/stake' style='width:100% !Important;min-height:700px !Important;'><embed>`)
         }
       } 
       style={{padding:"12px", paddingRight:"48px", paddingLeft:"48px", margin:"12px", border: '1px solid #806868', borderRadius: '12px'}}

@@ -32,7 +32,7 @@ export default function BFHCard({
 					style={{width:"25%", marginLeft:"37.5%", padding:"12px", border: '1px solid #f4aa11', borderRadius: '12px'}}
 					onClick={
 						function (){		
-							$("BFH").html(`
+							$("#BFH").html(`
 							<embed src='${BFH_Staking_Pool_URL}' style='width:100% !Important; min-height:700px !Important;'>
 							</embed>
 							`)
