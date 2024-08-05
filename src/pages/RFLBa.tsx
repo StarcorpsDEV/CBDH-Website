@@ -14,7 +14,7 @@ function AppRFLBa() {
               <a
                 className="text-transparent transition bg-clip-text tw-gradient-bronze"
               >
-                Refined Fluid Liquid Badger ERC-721 NFTs
+                Refined Fluids Liquid Badgers α ERC-721 NFTs
               </a></div>
 
             <div className="row">
