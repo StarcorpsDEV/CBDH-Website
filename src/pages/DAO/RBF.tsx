@@ -1,5 +1,5 @@
-import RBFCard from "@/components/manager/RBFCard";
-import RBF from "@/components/manager/button/RBFButton";
+import RBFCard from "@/components/DAO/RBFCard";
+import RBF from "@/components/DAO/button/RBFButton";
 
 function AppRBF() {
 return (

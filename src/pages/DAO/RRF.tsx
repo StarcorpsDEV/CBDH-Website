@@ -1,5 +1,5 @@
-import RRFCard from "@/components/manager/RRFCard";
-import RRF from "@/components/manager/button/RRFButton";
+import RRFCard from "@/components/DAO/RRFCard";
+import RRF from "@/components/DAO/button/RRFButton";
 
 function AppRRF() {
 return (

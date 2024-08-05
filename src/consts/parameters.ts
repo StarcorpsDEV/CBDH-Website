@@ -74,7 +74,7 @@ export const RFLBanftContract = getContract({
 // The block explorer you want to use (Opens when user clicks on history of events. i.e. transfers)
 export const blockExplorer = "https://polygonscan.com";
 
-export const STAKING_URL="https://cbdh-nft-staking.vercel.app"
+export const STAKING_URL="https://staking.badgerscollectif.com"
 export const RFLBa_URL="https://refined-fluids-liquid-badgers-a.nfts2.me/"
 export const RFLBa_embed_URL="https://0xa41573f9a4791be31d538fa5916d1ee8b849ec52_137.nfts2.me/?widget=classic&hideBanner=true"
 export const BFH_Staking_Pool_URL = "https://badgerscollectif-dmfsb-nft-staking.surge.sh/"

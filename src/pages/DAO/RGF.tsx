@@ -1,5 +1,5 @@
-import RGFCard from "@/components/manager/RGFCard";
-import RGF from "@/components/manager/button/RGFButton";
+import RGFCard from "@/components/DAO/RGFCard";
+import RGF from "@/components/DAO/button/RGFButton";
 
 function AppRGF() {
 return (

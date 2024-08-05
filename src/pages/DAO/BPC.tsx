@@ -1,5 +1,5 @@
-import BPCCard from "@/components/manager/BPCCard";
-import BPC from "@/components/manager/button/BPCButton";
+import BPCCard from "@/components/DAO/BPCCard";
+import BPC from "@/components/DAO/button/BPCButton";
 
 function AppBPC() {
 return (

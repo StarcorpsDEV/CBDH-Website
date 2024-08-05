@@ -14,7 +14,7 @@ export default function RRFCard({
 		<div className="relative">
 		<div className="z-10 card h-full flex flex-col relative items-center rounded-xl bg-black/75 border-slate-800 border-2">
 		<div className="center card-content font-bold text-transparent transition bg-clip-text tw-gradient-red rounded-xl bg-black/75">
-		<Breadcrumb url={"/manager/RRF"} nftName={"Refined Red Fluid"} nftId={"null"}/>
+		<Breadcrumb url={"/DAO/RRF"} nftName={"Refined Red Fluid"} nftId={"null"}/>
 		<img
 					src={"/sRRF.webp"}
 					alt="CBDH"

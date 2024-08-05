@@ -14,7 +14,7 @@ export default function RPFCard({
 		<div className="relative">
 		<div className="z-10 card h-full flex flex-col relative items-center rounded-xl bg-black/75 border-slate-800 border-2">
 		<div className="center card-content font-bold text-transparent transition bg-clip-text tw-gradient-purple rounded-xl bg-black/75">
-		<Breadcrumb url={"/manager/RPF"} nftName={"Refined Purple Fluid"} nftId={"null"}/>
+		<Breadcrumb url={"/DAO/RPF"} nftName={"Refined Purple Fluid"} nftId={"null"}/>
 		<img
 					src={"/sRPF.webp"}
 					alt="CBDH"

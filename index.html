@@ -113,28 +113,23 @@
 </div>
 </footer>
 <script>
-    $(document).ready(function(){
-    $(".ddt").dropdown({hover:true,width:'100%'});
-    $('.sidenav').sidenav({edge:"left"});
-    $('.tooltipped').tooltip();
-    setColorTheme(themeColor);
-    setTimeout(
-        () => {
-            $(document).ready(function(){
-                $('.carousel').carousel({
-                    dist: -50,
-                    shift:24,
-                    padding:12,
-                    numVisible:7,
-                    duration:500,
-                });
-            });
-        }
-        ,50)
-    });
-    
+$(document).ready(function(){
+    onDocReady()
+});
+
+
 var loader = "<div class='center'><div class='preloader-wrapper big active'><div class='spinner-layer spinner-blue'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div><div class='spinner-layer spinner-red'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div><div class='spinner-layer spinner-yellow'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div><div class='spinner-layer spinner-green'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div></div></div>";
 document.getElementById("root").innerHTML=loader;
+
+window.addEventListener( "pageshow", function ( event ) {
+var historyTraversal = event.persisted || 
+                        ( typeof window.performance != "undefined" && 
+                            window.performance.navigation.type === 2 );
+if ( historyTraversal ) {
+onDocReady()
+}
+});
+
 if(typeof(Storage) !== "undefined"){
 var userData = localStorage.getItem("userPreference");
 if(userData == undefined){
@@ -256,6 +251,26 @@ $(".collapsible-header").css({"background-color":"#f5f5f5"});
 $(".collapsible").css({"background-color":"#dededef2","color":"#263238"});
 $(".collapsible-body").css({"background-color":"#eeeeee","color":"#263238"});
 }
+}
+
+function onDocReady(){
+$(".ddt").dropdown({hover:true,width:'100%'});
+$('.sidenav').sidenav({edge:"left"});
+$('.tooltipped').tooltip();
+setColorTheme(themeColor);
+setTimeout(
+() => {
+    $(document).ready(function(){
+        $('.carousel').carousel({
+            dist: -50,
+            shift:24,
+            padding:12,
+            numVisible:7,
+            duration:500,
+        });
+    });
+}
+,50)
 }
 </script>
 

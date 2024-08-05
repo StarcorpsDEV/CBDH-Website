@@ -1,5 +1,5 @@
-import BDTCard from "@/components/manager/BDTCard";
-import BDT from "@/components/manager/button/BDTButton";
+import BDTCard from "@/components/DAO/BDTCard";
+import BDT from "@/components/DAO/button/BDTButton";
 
 function AppBDT() {
 return (

@@ -1,5 +1,5 @@
-import BFHCard from "@/components/manager/BFHCard";
-import BFH from "@/components/manager/button/BFHButton";
+import BFHCard from "@/components/DAO/BFHCard";
+import BFH from "@/components/DAO/button/BFHButton";
 
 function AppBFH() {
 return (
