@@ -36,7 +36,9 @@ return(
 			<a
 			className="text-transparent transition bg-clip-text tw-gradient-bronze"
 			>
-			<a href="https://discord.gg/tmq28kMgvy" target="_blank" style={{color: "rgb(255, 255, 255)"}}><i className="material-icons"><img style={{marginTop:"24px", width: "48px",padding:"2px",  marginRight:"12px"}} src="/discord.webp"></img></i>Join our discord to participate in the community and get exclusive tokens as rewards and collectors NFTs.</a>
+			<a href="https://discord.gg/tmq28kMgvy" target="_blank" style={{color: "rgb(255, 255, 255)"}}><i className="material-icons"><img style={{marginTop:"24px", width: "48px",padding:"2px",  marginRight:"12px"}} src="/discord.webp"></img></i>
+			Join our discord to participate in the community, to get giveaway of ERC-20 tokens, to join the whitelist for ERC-1155 NFT bundles, and to mint exclusive collectors ERC-721 NFTs.
+			</a>
 			</a>
 			</div>
 		</div>
