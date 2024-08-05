@@ -6,7 +6,6 @@ import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import RFLBaGallery from "@/components/gallery/NFTGalleryRFLBa"
 import { Breadcrumb } from "@/components/Nav/Breadcrumb"
-import Carousel from "@/components/Carousel"
 
 import {
   MediaRenderer,
@@ -214,7 +213,6 @@ const NFTPage = () => {
       </div>
     </div>
     </div>
-    <Carousel/>
     </div>
   );
 

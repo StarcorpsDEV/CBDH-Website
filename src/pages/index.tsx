@@ -19,16 +19,26 @@ return(
 			<div className="col s12">
 			<Carousel/>
 		</div>
-			<div className="col s12">
-      <div className="text-slate-100 mb-8 text-center font-bold text-3xl">
+		<div className="col s12">
+     		<div className="text-slate-100 mb-8 text-center font-bold text-3xl">
 			<a
-				className="text-transparent transition bg-clip-text tw-gradient-silver"
+			className="text-transparent transition bg-clip-text tw-gradient-silver"
 			>
-			Select an NFT to mint on Polygon and stake it to get Fluids tokens
-			</a></div>
+			Select an NFT to mint on Polygon and stake it to get Fluids tokens.
+			</a>
+			</div>
 		</div>
     <div className="col s12">
       <Listing/>
+		</div>
+		<div className="col s12">
+     		<div className="text-slate-100 mb-8 text-center font-bold text-3xl">
+			<a
+			className="text-transparent transition bg-clip-text tw-gradient-bronze"
+			>
+			<a href="https://discord.gg/tmq28kMgvy" target="_blank" style={{color: "rgb(255, 255, 255)"}}><i className="material-icons"><img style={{marginTop:"24px", width: "48px",padding:"2px",  marginRight:"12px"}} src="/discord.webp"></img></i>Join our discord to participate in the community and get exclusive tokens as rewards and collectors NFTs.</a>
+			</a>
+			</div>
 		</div>
 		</div>
 	</div>
