@@ -1,5 +1,5 @@
 
-import { BPC_Staking_Pool_URL } from "@/consts/parameters";
+import { BPC_SMF_Drop_URL } from "@/consts/parameters";
 import { Breadcrumb } from "@/components/Nav/Breadcrumb"
 
 export default function BPCCard({
@@ -33,7 +33,7 @@ export default function BPCCard({
 					onClick={
 						function (){
 							$("#BPC").html(`
-							<embed src='${BPC_Staking_Pool_URL}' style='width:100% !Important; min-height:700px !Important;'>
+							<embed src='${BPC_SMF_Drop_URL}' style='width:100% !Important; min-height:700px !Important;'>
 							</embed>
 							`)
 						  }

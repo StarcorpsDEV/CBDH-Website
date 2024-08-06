@@ -1,6 +1,6 @@
 
 
-import { liquidity_pool_interface,DMFUSDC_Uniswap, DMFMATIC_Sushi, BPC_Staking_Pool_URL, BPC_Aragon_DAO_URL } from "@/consts/parameters";
+import { liquidity_pool_interface,DMFUSDC_Uniswap, DMFMATIC_Sushi, BPC_SMF_Drop_URL, BPC_Aragon_DAO_URL } from "@/consts/parameters";
 
 export default function BPC(){
   return (
@@ -8,14 +8,14 @@ export default function BPC(){
       <a onClick={
       function (){
           $("#BPC").html(`
-          <embed src='${BPC_Staking_Pool_URL}' style='width:100% !Important; min-height:700px !Important;'>
+          <embed src='${BPC_SMF_Drop_URL}' style='width:100% !Important; min-height:700px !Important;'>
           </embed>
           `)
         }
       } 
       style={{padding:"12px", paddingRight:"24px", paddingLeft:"24px", margin:"12px", border: '1px solid #806868', borderRadius: '12px'}}
       className="text-transparent transition bg-clip-text tw-gradient-bronze pointer hover">
-      NFTs Pool
+      SMF Drop
       </a>
       <a onClick={
          function (){

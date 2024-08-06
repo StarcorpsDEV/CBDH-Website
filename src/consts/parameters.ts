@@ -62,28 +62,20 @@ export const RRFSBnftContract = getContract({
   client,
 });
 
-export const RFLBanftContract = getContract({
-  // Your smart contract address (available on the thirdweb dashboard)
-  address: "0xa41573F9A4791be31D538FA5916d1Ee8B849eC52",
-  // The chain object of the chain your contract is deployed to.
-  // If that chain isn't in the default list of our SDK, use `defineChain` - for example: defineChain(666666)
-  chain: polygon,
-  client,
-});
 
 // The block explorer you want to use (Opens when user clicks on history of events. i.e. transfers)
 export const blockExplorer = "https://polygonscan.com";
 
 export const STAKING_URL="https://staking.badgerscollectif.com"
-export const RFLBa_URL="https://refined-fluids-liquid-badgers-a.nfts2.me/"
-export const RFLBa_embed_URL="https://0xa41573f9a4791be31d538fa5916d1ee8b849ec52_137.nfts2.me/?widget=classic&hideBanner=true"
+
 export const BFH_Staking_Pool_URL = "https://badgerscollectif-dmfsb-nft-staking.surge.sh/"
 export const BDT_Staking_Pool_URL = "https://badgerscollectif-smfsb-nft-staking.surge.sh/"
-export const BPC_Staking_Pool_URL = "https://badgerscollectif-rflba-nft-staking.surge.sh/"
 export const RRF_Staking_Pool_URL = "https://badgerscollectif-rrfsb-nft-staking.surge.sh/"
 export const RGF_Staking_Pool_URL = "https://badgerscollectif-rgfsb-nft-staking.surge.sh/"
 export const RBF_Staking_Pool_URL = "https://badgerscollectif-rbfsb-nft-staking.surge.sh/"
 export const RPF_Staking_Pool_URL = "https://badgerscollectif-rpfsb-nft-staking.surge.sh/"
+
+export const BPC_SMF_Drop_URL = "https://badgerscollectif-smf-erc-20.surge.sh/"
 
 export const BPC_Aragon_DAO_URL = "https://app.aragon.org/#/daos/polygon/0xf57603ab0c56e44386cb0d7125bbcbfcfd9caff2/"
 export const BFH_Aragon_DAO_URL = "https://app.aragon.org/#/daos/polygon/0xe859c29639a688cd82be694d612f60a3e3c2275e/"

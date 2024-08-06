@@ -6,11 +6,11 @@
 
 <title id="pagetitle">Badgers Collectif</title>
 
-<link rel="icon" href="logo_mini.png" type="image/x-icon">
-<link rel="stylesheet" href="css/materialIcons.css">
-<link rel="stylesheet" type="text/css" href="css/materialize.css" />
-<link rel="stylesheet" type="text/css" href="css/freestyle.css" />
-<link rel="stylesheet" href="css/animate.css">
+<link rel="icon" href="/logo_mini.png" type="image/x-icon">
+<link rel="stylesheet" href="/css/materialIcons.css">
+<link rel="stylesheet" type="text/css" href="/css/materialize.css" />
+<link rel="stylesheet" type="text/css" href="/css/freestyle.css" />
+<link rel="stylesheet" href="/css/animate.css">
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -24,7 +24,7 @@
 <div class="nav-wrapper nav-theme">
 <a href="https://badgerscollectif.com" class="brand-logo"><img onclick="document.location='index'" style="margin:4px 24px 6px 24px;padding:8px;" class="responsive_background" width="64x" src="/cbdh_logo.webp" alt="badgerscollectif"></a>
 <ul class="right hide-on-med-and-down">
-<li><a href="https://marketplace.badgerscollectif.com"><i class="material-icons left">account_balance</i>Marketplace</a></li>
+<li><a href="https://marketplace.badgerscollectif.com" target="_blank"><i class="material-icons left">account_balance</i>Marketplace</a></li>
 <li><a class="ddt" data-target="nfts_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">business</i>NFTs</a></li>
 <li><a class="ddt" data-target="daos_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">group_work</i>DAOs</a></li>
 <li><a class="ddt" data-target="support_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">info_outline</i>CBDH</a></li>
@@ -35,7 +35,7 @@
 
 
 <ul id="mobile_nav" class="sidenav">
-    <li><a href="https://marketplace.badgerscollectif.com"><i class="material-icons">account_balance</i>Marketplace</a></li>
+    <li><a href="https://marketplace.badgerscollectif.com" target="_blank"><i class="material-icons">account_balance</i>Marketplace</a></li>
     <li class="divider" style="width:100%"></li>
     <li><a href="/DMFSB"><i class="material-icons" style="line-height:0"><img style="margin-top: 12px !important;" src="/DMFSB_featured_image_icon.webp"></img></i>Diamond Badger</a></li>
     <li><a href="/SMFSB"><i class="material-icons"><img style="margin-top: 12px !important;" src="/SMFSB_featured_image_icon.webp"></img></i>Staked Badger</a></li>
@@ -43,7 +43,6 @@
     <li><a href="/RGFSB"><i class="material-icons"><img style="margin-top: 12px !important;" src="/RGFSB_featured_image_icon.webp"></img></i>Green Badger</a></li>
     <li><a href="/RBFSB"><i class="material-icons"><img style="margin-top: 12px !important;" src="/RBFSB_featured_image_icon.webp"></img></i>Blue Badger</a></li>
     <li><a href="/RRFSB"><i class="material-icons"><img style="margin-top: 12px !important;" src="/RRFSB_featured_image_icon.webp"></img></i>Red Badger</a></li>
-    <li><a href="/RFLBa"><i class="material-icons"><img style="margin-top: 12px !important;" src="https://nftstorage.link/ipfs/bafybeiay4hmhtxoie47v4xxjk4z6gnfov4qwebuztkr64jihlip3ww7al4/logo.gif"></img></i>Liquid Badgers α</a></li>
     <li class="divider" style="width:100%"></li>
     <li><a href="/DAO/BFH"><i class="material-icons"><img src="/iBFH.webp" style="margin-top: 12px !important;"></img></i>Fluids Holding</a></li>
     <li><a href="/DAO/BDT"><i class="material-icons"><img src="/iBDT.webp" style="margin-top: 12px !important;"></img></i>Diamond Trust</a></li>
@@ -76,7 +75,6 @@
     <li><a href="/RGFSB"><i class="material-icons"><img src="/RGFSB_featured_image_icon.webp"></img></i>Green Badger</a></li>
     <li><a href="/RBFSB"><i class="material-icons"><img src="/RBFSB_featured_image_icon.webp"></img></i>Blue Badger</a></li>
     <li><a href="/RRFSB"><i class="material-icons"><img src="/RRFSB_featured_image_icon.webp"></img></i>Red Badger</a></li>
-    <li><a href="/RFLBa"><i class="material-icons"><img src="https://nftstorage.link/ipfs/bafybeiay4hmhtxoie47v4xxjk4z6gnfov4qwebuztkr64jihlip3ww7al4/logo.gif"></img></i>Liquid Badgers α</a></li>
 </ul>
 
 <ul id="support_nav" class="dropdown-content" style="min-width:220px;">
@@ -265,12 +263,19 @@ setTimeout(
             dist: -50,
             shift:24,
             padding:12,
-            numVisible:7,
+            numVisible:6,
             duration:500,
         });
     });
 }
 ,50)
+$('.carousel').carousel({
+dist: -50,
+shift:24,
+padding:12,
+numVisible:6,
+duration:500,
+});
 }
 </script>
 
