@@ -127,28 +127,6 @@ return(
         )}
       </div>
     </Link>
-
-    <Link to={`/RFLBa`}>
-      <div
-        className="z-10 nftBox mx-auto flex h-42 w-42 cursor-pointer flex-col items-center justify-center gap-4 bg-transparent transition-all duration-300 hover:scale-105 md:h-60 md:w-60"
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-	      >
-        <MediaRenderer client={client} src={"https://nftstorage.link/ipfs/bafybeiay4hmhtxoie47v4xxjk4z6gnfov4qwebuztkr64jihlip3ww7al4/logo.gif"} />
-        {hover && (
-          <div className="absolute flex h-42 w-42 flex-col items-center justify-center rounded-lg bg-black/50 backdrop-filter md:h-60 md:w-60">
-            <h1 className="text-2xl font-bold text-gray-200">
-			      {"Refined Fluids"}
-            </h1>
-            <h1 className="text-2xl text-gray-200">
-             {"Liquid Badgers α"}
-            </h1>
-          </div>
-        )}
-      </div>
-    </Link>
-
-
 	</div>
 	</div>
 	</div>
