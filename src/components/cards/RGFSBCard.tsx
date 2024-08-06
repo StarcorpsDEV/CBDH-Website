@@ -16,7 +16,7 @@ export default function RGFSBCard({
 				<div className="center card-content font-bold text-transparent transition bg-clip-text tw-gradient-silver rounded-xl bg-black/75">
 				<Breadcrumb url={"/RGFSB"} nftName={"Refined Green Fluid"} nftId={"null"}/>
 				<img
-					src={"RGFSB_banner_image.webp"}
+					src={"/RGFSB_banner_image.webp"}
 					alt="CBDH"
 					className="mb-12 responsive nftBox"
 					style={{width:"100%", border: '1px solid #f4aa11', borderRadius: '12px'}}
@@ -26,7 +26,7 @@ export default function RGFSBCard({
 					{content}
 					<div id="RGFSB">				
 					<img
-					src={"RGFSB_featured_image.webp"}
+					src={"/RGFSB_featured_image.webp"}
 					alt="CBDH"
 					className="pointer nftBox mb-12 mt-12"
 					style={{width:"33%", marginLeft:"33%", border: '1px solid #f4aa11', borderRadius: '12px'}}
