@@ -55,7 +55,7 @@ return (
 {contractMetadata ? (
 <div className="mb-8 text-center">
 <h1 className="text-4xl font-bold text-white">
-{ <a href={blockExplorer+"/address/"+RGFSBnftContract} className = "pointer" target={"_blank"}>{contractMetadata.name}</a>}
+{ <a href={blockExplorer+"/address/"+RGFSBnftContract.address} className = "pointer" target={"_blank"}>{contractMetadata.name}</a>}
 </h1>
 <h2 className="text-xl font-bold text-white">
 {String(contractMetadata.description).split("- Badgers Fluids Holding DAO:")[0]}
