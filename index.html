@@ -53,7 +53,8 @@
     <li><a href="/DAO/BPC"><i class="material-icons"><img src="/iBPC.webp" style="margin-top: 12px !important;"></img></i>Presidency Council</a></li>
 
     <li class="divider" style="width:100%"></li>
-    <li><a href="https://discord.gg/tmq28kMgvy" target="_blank"><i class="material-icons"><img style="margin-top: 14px !important;" src="/discord.webp"></img></i>Discord</a></li>
+    <li><a href="https://discord.gg/tmq28kMgvy" target="_blank"><i class="material-icons"><img style="margin-top: 14px !important;" src="/discord.webp"></img></i>Board-in</a></li>
+    <li><a href="https://x.com/BadgerCollectif" target="_blank"><i class="material-icons"><img style="margin-top: 14px !important;" src="/x.png"></img></i>Follow</a></li>
     <li><a onclick='changeColorTheme()'><i class="material-icons">tonality</i>Switch color theme</a></li>
 </ul>
 
@@ -78,7 +79,8 @@
 </ul>
 
 <ul id="support_nav" class="dropdown-content" style="min-width:220px;">
-    <li><a href="https://discord.gg/tmq28kMgvy" target="_blank"><i class="material-icons"><img style="margin-top: 2px !important;" src="/discord.webp"></img></i>Discord</a></li>
+    <li><a href="https://discord.gg/tmq28kMgvy" target="_blank"><i class="material-icons"><img style="margin-top: 2px !important;" src="/discord.webp"></img></i>Board-in</a></li>
+    <li><a href="https://x.com/BadgerCollectif" target="_blank"><i class="material-icons"><img style="margin-top: 2px !important;" src="/x.png"></img></i>Follow</a></li>
     <li><a onclick='changeColorTheme()'><i class="material-icons">tonality</i>Switch color theme</a></li>
 </ul>
 </header>
@@ -262,6 +264,18 @@ padding:12,
 numVisible:6,
 duration:500,
 });
+
+setTimeout(
+() => {
+$('.carousel').carousel({
+dist: -50,
+shift:24,
+padding:12,
+numVisible:6,
+duration:500,
+});
+}
+,50)
 }
 </script>
 
