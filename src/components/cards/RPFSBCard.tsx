@@ -14,7 +14,7 @@ export default function RPFSBCard({
 		<div className="relative">
 			<div className="z-10 card h-full flex flex-col relative items-center rounded-xl bg-black/75 border-slate-800 border-2">
 			<div className="center card-content font-bold text-transparent transition bg-clip-text tw-gradient-silver rounded-xl bg-black/75">
-			<Breadcrumb url={"/RPFSB"} nftName={"Refined Purple Fluid"} nftId={"null"}/>
+			<Breadcrumb url={"/RPFSB"} nftName={"Purple Badger"} nftId={"null"}/>
 				<img
 					src={"/RPFSB_banner_image.webp"}
 					alt="CBDH"

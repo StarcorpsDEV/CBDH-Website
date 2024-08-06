@@ -47,7 +47,7 @@ const NFTPage = () => {
       
       <div className="card-content mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 md:flex-row ">
         <div className="flex flex-col px-10 md:min-h-screen md:w-1/2 ">
-        <Breadcrumb url={"/RPFSB"} nftName={"Refined Purple Fluid"} nftId={String(id)}/>
+        <Breadcrumb url={"/RPFSB"} nftName={"Purple Badger"} nftId={String(id)}/>
           {nft ? (
             <MediaRenderer
               client={client}

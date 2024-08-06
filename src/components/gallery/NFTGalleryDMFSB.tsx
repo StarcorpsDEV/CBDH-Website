@@ -7,7 +7,7 @@ import { getContractMetadata } from "thirdweb/extensions/common";
 import { getNFT, getNFTs, totalSupply } from "thirdweb/extensions/erc721";
 import { useReadContract } from "thirdweb/react";
 
-import { DMFSBnftContract } from "@/consts/parameters";
+import { DMFSBnftContract, blockExplorer } from "@/consts/parameters";
 import { NFTCard } from "@/components/NFTCard";
 
 
@@ -55,7 +55,7 @@ return (
 {contractMetadata ? (
 <div className="mb-8 text-center">
 <h1 className="text-4xl font-bold text-white">
-{contractMetadata.name}
+{ <a href={blockExplorer+"/address/"+DMFSBnftContract} className = "pointer" target={"_blank"}>{contractMetadata.name}</a>}
 </h1>
 <h2 className="text-xl font-bold text-white">
 {String(contractMetadata.description).split("- Badgers Fluids Holding DAO:")[0]}

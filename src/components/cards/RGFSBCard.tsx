@@ -14,7 +14,7 @@ export default function RGFSBCard({
 		<div className="relative">
 				<div className="z-10 card h-full flex flex-col relative items-center rounded-xl bg-black/75 border-slate-800 border-2">
 				<div className="center card-content font-bold text-transparent transition bg-clip-text tw-gradient-silver rounded-xl bg-black/75">
-				<Breadcrumb url={"/RGFSB"} nftName={"Refined Green Fluid"} nftId={"null"}/>
+				<Breadcrumb url={"/RGFSB"} nftName={"Green Badger"} nftId={"null"}/>
 				<img
 					src={"/RGFSB_banner_image.webp"}
 					alt="CBDH"

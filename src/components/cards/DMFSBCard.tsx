@@ -13,7 +13,7 @@ export default function DMFSBCard({
 		<div className="relative">
 			<div className="z-10 card h-full flex flex-col relative items-center rounded-xl bg-black/75 border-slate-800 border-2">
 			<div className="center card-content font-bold text-transparent transition bg-clip-text tw-gradient-silver rounded-xl bg-black/75">
-			<Breadcrumb url={"/DMFSB"} nftName={"Diamond Fluid"} nftId={"null"}/>
+			<Breadcrumb url={"/DMFSB"} nftName={"Diamond Badger"} nftId={"null"}/>
 				<img
 					src={"/DMFSB_banner_image.webp"}
 					alt="CBDH"
