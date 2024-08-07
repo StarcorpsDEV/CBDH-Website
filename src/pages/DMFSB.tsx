@@ -1,7 +1,5 @@
 import DMFSBCard from "@/components/cards/DMFSBCard";
 import DMFSB from "@/components/buttons/DMFSBButton";
-import Carousel from "@/components/Carousel"
-
 function AppDMFSB() {
 return (
 <div className="row">
@@ -22,7 +20,6 @@ return (
 					 in the Collectif NFTs Staking Pools. Mint a new collectors NFT and stake it to get the reward of 50% APR.">
 						<DMFSB />
 					</DMFSBCard>
-					<Carousel/>
 					</div>
 					</div>
 				</div>

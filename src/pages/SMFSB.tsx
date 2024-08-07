@@ -1,6 +1,5 @@
 import SMFSBCard from "@/components/cards/SMFSBCard";
 import SMFSB from "@/components/buttons/SMFSBButton";
-import Carousel from "@/components/Carousel"
 
 function AppSMFSB() {
   return (
@@ -22,7 +21,6 @@ function AppSMFSB() {
 					 in the Collectif NFTs Staking Pools. Mint a new collectors NFT and stake it to get the reward of 50% APR.">
 									<SMFSB />
 								</SMFSBCard>
-								<Carousel/>
 							</div>
 						</div>
 					</div>

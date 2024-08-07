@@ -1,6 +1,5 @@
 import RGFSBCard from "@/components/cards/RGFSBCard";
 import RGFSB from "@/components/buttons/RGFSBButton";
-import Carousel from "@/components/Carousel"
 
 function AppRGFSB() {
   return (
@@ -22,7 +21,6 @@ function AppRGFSB() {
 					 in the Collectif NFTs Staking Pools. Mint a new collectors NFT and stake it to get the reward of 50% APR.">
 							<RGFSB />
 						</RGFSBCard>
-						<Carousel/>
 						</div>
 					</div>
 				</div>
