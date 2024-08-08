@@ -10,6 +10,7 @@ return(
 <a className="carousel-item nftBox center" href="/RBFSB" style={{"padding":"16px"}}><img src="/RBFSB_featured_image_small.webp"></img><h1>RBFSB</h1></a>
 <a className="carousel-item nftBox center" href="/RGFSB" style={{"padding":"16px"}}><img src="/RGFSB_featured_image_small.webp"></img><h1>RGFSB</h1></a>
 <a className="carousel-item nftBox center" href="/RPFSB" style={{"padding":"16px"}}><img src="/RPFSB_featured_image_small.webp"></img><h1>RPFSB</h1></a>
+<a className="carousel-item nftBox center" href="/RFGB" style={{"padding":"16px"}}><img src="/RFGB_featured_image_small.webp"></img><h1>RFGB</h1></a>
 </div>
 </div>
 </div>

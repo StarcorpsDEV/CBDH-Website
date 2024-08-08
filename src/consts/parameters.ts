@@ -1,5 +1,5 @@
 import { createThirdwebClient, getContract } from "thirdweb";
-import { polygon } from "thirdweb/chains";
+import { ethereum, polygon } from "thirdweb/chains";
 
 /** Change these values to configure the application for your own use. **/
 
@@ -62,6 +62,16 @@ export const RRFSBnftContract = getContract({
   client,
 });
 
+export const RFGBnftContract = getContract({
+  // Your smart contract address (available on the thirdweb dashboard)
+  address: "0x3a5b142bE5C3C8D3651f17Ad3080f572eeDfd491",
+  // The chain object of the chain your contract is deployed to.
+  // If that chain isn't in the default list of our SDK, use `defineChain` - for example: defineChain(666666)
+  chain: ethereum,
+  client,
+});
+
+
 
 // The block explorer you want to use (Opens when user clicks on history of events. i.e. transfers)
 export const blockExplorer = "https://polygonscan.com";
@@ -76,6 +86,15 @@ export const RBF_Staking_Pool_URL = "https://badgerscollectif-rbfsb-nft-staking.
 export const RPF_Staking_Pool_URL = "https://badgerscollectif-rpfsb-nft-staking.surge.sh/"
 
 export const BPC_SMF_Drop_URL = "https://badgerscollectif-smf-erc-20.surge.sh/"
+
+export const RFGB_tw_embed = `<iframe
+    src="https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0x3a5b142bE5C3C8D3651f17Ad3080f572eeDfd491&chain=%7B%22name%22%3A%22Ethereum+Mainnet%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2F1.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22eth%22%2C%22chainId%22%3A1%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22ethereum%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmcxZHpyJa8T4i63xqjPYrZ6tKrt55tZJpbXcjSDKuKaf9%2Fethereum%2F512.png%22%2C%22width%22%3A512%2C%22height%22%3A512%2C%22format%22%3A%22png%22%7D%7D&clientId=20a005c403f089b6b726937429862c33&theme=light&primaryColor=purple"
+    width="600px"
+    height="600px"
+    style="max-width:100%;"
+    frameborder="0"
+></iframe>`
+
 
 export const BPC_Aragon_DAO_URL = "https://app.aragon.org/#/daos/polygon/0xf57603ab0c56e44386cb0d7125bbcbfcfd9caff2/"
 export const BFH_Aragon_DAO_URL = "https://app.aragon.org/#/daos/polygon/0xe859c29639a688cd82be694d612f60a3e3c2275e/"
