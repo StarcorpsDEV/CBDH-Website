@@ -1,5 +1,5 @@
 import  RPFSBGallery from "@/components/gallery/NFTGalleryRPFSB"
-import { STAKING_URL } from "@/consts/parameters";
+import { RPFSB_tw_embed } from "@/consts/parameters";
 import { Breadcrumb } from "@/components/Nav/Breadcrumb"
 
 export default function RPFSBCard({
@@ -30,14 +30,11 @@ export default function RPFSBCard({
 					alt="CBDH"
 					className="pointer nftBox mb-12 mt-12"
 					style={{width:"33%", marginLeft:"33%", border: '1px solid #f4aa11', borderRadius: '12px'}}
-					onClick={
+					onLoad={
 						function (){
-							$("#RPFSB").html(`
-							<embed src='${STAKING_URL}/RPFSB/mint' style='width:100% !Important; min-height:700px !Important;'>
-							</embed>
-							`)
-						  }
-					}
+							$("#RPFSB").html(RPFSB_tw_embed)
+							}
+						}
 				/></div>
 					<RPFSBGallery/>
 				</div>

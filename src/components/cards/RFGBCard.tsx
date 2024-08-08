@@ -23,13 +23,13 @@ export default function RFGBCard({
 				{children}
 				<div className="text-slate-300 font-semibold mt-12">
 					{content}
-					<div id="RFGB">				
+					<div id="RFGB" className= "nftBox mb-12 mt-12">				
 					<img
 					src={"/RFGB_featured_image.webp"}
 					alt="CBDH"
 					className="pointer nftBox mb-12 mt-12"
 					style={{width:"33%", marginLeft:"33%", border: '1px solid #f4aa11', borderRadius: '12px'}}
-					onClick={
+					onLoad={
 						function (){
 							$("#RFGB").html(RFGB_tw_embed)
 						}

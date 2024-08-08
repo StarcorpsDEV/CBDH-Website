@@ -1,16 +1,13 @@
 
 
-import { STAKING_URL } from "@/consts/parameters";
+import { STAKING_URL, SMFSB_tw_embed } from "@/consts/parameters";
 
 export default function SMFSB(){
   return (
     <div>
       <a onClick={
-      function (){
-          $("#SMFSB").html(`
-          <embed src='${STAKING_URL}/SMFSB/mint' style='width:100% !Important; min-height:700px !Important;'>
-          </embed>
-          `)
+        function(){
+          $("#SMFSB").html(SMFSB_tw_embed)
         }
       } 
       style={{padding:"12px", paddingRight:"48px", paddingLeft:"48px", margin:"12px", border: '1px solid #806868', borderRadius: '12px'}}
