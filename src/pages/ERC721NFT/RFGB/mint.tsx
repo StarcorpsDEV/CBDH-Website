@@ -11,7 +11,7 @@ function AppRFGB() {
 			<div className="col s12">
 					<div className="text-slate-100 mb-8 text-center font-bold text-3xl">
 					<a
-						className="text-transparent transition bg-clip-text tw-gradient-blue"
+						className="text-transparent transition bg-clip-text tw-gradient-bronze"
 					>
 						Refined Fluids Genesis Badgers ERC-721 NFTs
 					</a></div>
