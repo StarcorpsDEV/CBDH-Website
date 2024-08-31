@@ -30,7 +30,7 @@ export default function RRFSBCard({
 					alt="CBDH"
 					className="pointer nftBox mb-12 mt-12"
 					style={{width:"33%", marginLeft:"33%", border: '1px solid #f4aa11', borderRadius: '12px'}}
-					onLoad={
+					onClick={
 						function (){
 							$("#RRFSB").html(RRFSB_tw_embed)
 							}

@@ -1,5 +1,6 @@
 import Carousel from "../components/Carousel"
-import Listing  from "../components/Listing";
+import Listing from "../components/Listing";
+import ListingGenesis from "../components/ListingGenesis";
 import { RFGB_tw_embed } from "@/consts/parameters";
 
 function App() {
@@ -17,7 +18,7 @@ return(
 			</a>
       </div>
       </div>
-			<div className="col s12">
+		<div className="col s12">
 			<Carousel/>
 		</div>
 		<div className="col s12">
@@ -29,35 +30,24 @@ return(
 			</a>
 			</div>
 		</div>
-    <div className="col s12">
+   	 <div className="col s12">
       <Listing/>
-		</div>
-		<div className="col s12">
-     		<div className="text-slate-100 mb-8 text-center font-bold text-3xl" style={{marginTop:"24px"}}>
+	</div>
+
+	<div className="col s12">
+     		<div className="text-slate-100 mb-8 text-center font-bold text-3xl">
 			<a
 			className="text-transparent transition bg-clip-text tw-gradient-bronze"
 			>
-			<a href = "/RFGB">For O.G. NFTs Collectors, the Genesis Badgers on Ethereum.</a>
+			For OG NFTs Collectors the Genesis Badgers on Ethereum.
 			</a>
 			</div>
-			<div className="relative">
-			<div className="z-10 h-full flex flex-col relative items-center rounded-xl bg-black/75 border-slate-800 border-2">
-			<div className="flex mt-12 mb-12 flex-wrap items-center justify-center gap-8" style={{padding:"12px"}}>
-				<a href="/RFGB">
-				<img
-				src={"/RFGB_featured_image.webp"}
-				alt="CBDH"
-				className="pointer nftBox mb-12 mt-12"
-				style={{width:"33%", marginLeft:"33%", border: '1px solid #f4aa11', borderRadius: '12px'}}
-			/>
-			</a>
-
-</div>
-</div>
-</div>
+		</div>
+   	 <div className="col s12">
+      <ListingGenesis/>
+	</div>
 
 
-</div>
 </div>
 </div>
 </div>
