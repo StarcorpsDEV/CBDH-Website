@@ -1,6 +1,6 @@
 
 
-import { DMFUSDC_Uniswap_APP, DMFMATIC_Sushi_APP, liquidity_pool_interface, DMFUSDC_Uniswap, DMFMATIC_Sushi, BDT_Staking_Pool_URL, BDT_Aragon_DAO_URL } from "@/consts/parameters";
+import { DMFUSDC_Uniswap_APP, DMFMATIC_Sushi_APP, liquidity_pool_interface, DMFUSDC_Uniswap, DMFMATIC_Sushi, BDT_Staking_Pool_URL, BDT_Aragon_DAO, DAO_interface } from "@/consts/parameters";
 
 export default function BDT(){
   return (
@@ -54,7 +54,7 @@ export default function BDT(){
           <div class='relative items-center p-12'>
           <div class='col s12 m4' style='margin-bottom:60px;'>
           <a style='padding:12px; padding-right:24px; padding-left:24px; margin:12px; border:1px solid #806868; border-radius:12px;' 
-          class='font-bold text-transparent transition bg-clip-text tw-gradient-gold pointer hover' target='_blank' href='${BDT_Aragon_DAO_URL}'>
+          class='font-bold text-transparent transition bg-clip-text tw-gradient-gold pointer hover' target='_blank' href='${DAO_interface+BDT_Aragon_DAO}'>
           AragonDAO</a>
           </div>
           <div class='col s6 m4' style='margin-bottom:60px;'>
