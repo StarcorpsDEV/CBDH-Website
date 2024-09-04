@@ -75,7 +75,7 @@ export const RPF_Staking_Pool_URL = "https://badgerscollectif-rpfsb-nft-staking.
 export const BPC_SMF_Drop_URL = "https://badgerscollectif-smf-erc-20.surge.sh/"
 
 export const RFGB_tw_embed = `<iframe
-    src="${NFT_Drop_URL}?contract=${RFGB_ADDRESS}&chain=ethereum&theme=system&primaryColor=orange"
+    src="${NFT_Drop_URL}?contract=${RFGB_ADDRESS}&chain=ethereum&theme=dark&primaryColor=orange"
     width="100%"
     height="600px"
     style="min-width:100%;"
