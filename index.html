@@ -22,18 +22,20 @@
 <header id="header" class="page-topbar">
 <nav>
 <div class="nav-wrapper nav-theme">
-<a href="https://badgerscollectif.com" class="brand-logo"><img onclick="document.location='index'" style="margin:4px 24px 6px 24px;padding:8px;" class="responsive_background" width="64x" src="/cbdh_logo.webp" alt="badgerscollectif"></a>
+<ul>
+    <li><a href="https://badgerscollectif.com" class=""><img onclick="document.location='index'" style="margin:4px 24px 6px 24px;padding:8px;" class="responsive_background" width="64x" src="/cbdh_logo.webp" alt="badgerscollectif"></a></li>
+    <li><span data-target="PriceTickerModal" class="chip pointer modal-trigger"><img src="/erc20-icons/dmf.png" alt="dmf"></img><span id="DMFUSDC_UNI_QUOTE_TOKEN_PRICE_BASE_TOKEN">-</span> USDC</span></li>
+</ul>
 <ul class="right hide-on-med-and-down">
-<li><a href="https://dex.badgerscollectif.com" target="_blank"><i class="material-icons left">account_balance</i>Tokens DEX</a></li>
-<li><a href="https://marketplace.badgerscollectif.com" target="_blank"><i class="material-icons left">store</i>NFTs Store</a></li>
-<li><a class="ddt" data-target="nfts_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">business</i>NFTs</a></li>
-<li><a class="ddt" data-target="daos_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">group_work</i>DAOs</a></li>
-<li><a class="ddt" data-target="support_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">info_outline</i>CBDH</a></li>
+    <li><a href="https://dex.badgerscollectif.com" target="_blank"><i class="material-icons left">account_balance</i>Tokens DEX</a></li>
+    <li><a href="https://marketplace.badgerscollectif.com" target="_blank"><i class="material-icons left">store</i>NFTs Store</a></li>
+    <li><a class="ddt" data-target="nfts_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">business</i>NFTs</a></li>
+    <li><a class="ddt" data-target="daos_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">group_work</i>DAOs</a></li>
+    <li><a class="ddt" data-target="support_nav"><i class="material-icons right">arrow_drop_down</i><i class="material-icons left">info_outline</i>CBDH</a></li>
 </ul>
 <a data-target="mobile_nav" class="sidenav-trigger right" onclick='openSideNav()'><i class="material-icons left">menu</i></a>
 </div>
 </nav>
-
 
 <ul id="mobile_nav" class="sidenav">
     <li><a href="https://dex.badgerscollectif.com" target="_blank"><i class="material-icons">account_balance</i>Tokens DEX</a></li>
@@ -63,13 +65,13 @@
 
 
 <ul id="daos_nav" class="dropdown-content" style="min-width:220px;">
-<li><a href="/DAO/BFH"><i class="material-icons"><img src="/iBFH.webp"></img></i>Fluids Holding</a></li>
-<li><a href="/DAO/BDT"><i class="material-icons"><img src="/iBDT.webp"></img></i>Diamond Trust</a></li>
-<li><a href="/DAO/RPF" style="font-size: 15.8px !important;"><i class="material-icons"><img src="/iRPF.webp"></img></i>Refined Purple Fluid</a></li>
-<li><a href="/DAO/RGF"><i class="material-icons"><img src="/iRGF.webp"></img></i>Refined Green Fluid</a></li>
-<li><a href="/DAO/RBF"><i class="material-icons"><img src="/iRBF.webp"></img></i>Refined Blue Fluid</a></li>
-<li><a href="/DAO/RRF"><i class="material-icons"><img src="/iRRF.webp"></img></i>Refined Red Fluid</a></li>
-<li><a href="/DAO/BPC"><i class="material-icons"><img src="/iBPC.webp"></img></i>Presidency Council</a></li>
+    <li><a href="/DAO/BFH"><i class="material-icons"><img src="/iBFH.webp"></img></i>Fluids Holding</a></li>
+    <li><a href="/DAO/BDT"><i class="material-icons"><img src="/iBDT.webp"></img></i>Diamond Trust</a></li>
+    <li><a href="/DAO/RPF" style="font-size: 15.8px !important;"><i class="material-icons"><img src="/iRPF.webp"></img></i>Refined Purple Fluid</a></li>
+    <li><a href="/DAO/RGF"><i class="material-icons"><img src="/iRGF.webp"></img></i>Refined Green Fluid</a></li>
+    <li><a href="/DAO/RBF"><i class="material-icons"><img src="/iRBF.webp"></img></i>Refined Blue Fluid</a></li>
+    <li><a href="/DAO/RRF"><i class="material-icons"><img src="/iRRF.webp"></img></i>Refined Red Fluid</a></li>
+    <li><a href="/DAO/BPC"><i class="material-icons"><img src="/iBPC.webp"></img></i>Presidency Council</a></li>
 </ul>
 
 <ul id="nfts_nav" class="dropdown-content" style="min-width:220px;">
@@ -94,6 +96,66 @@
 <div class="col s12">
 <div class="animated bounceIn">
 <div class="">
+<div class="modal" id="PriceTickerModal">
+    <ul class="tabs" id='PriceTickerModalTab'>
+        <li class="tab col s1 theme hide-on-small-only" ><span style='vertical-align:middle; display:inline-block;'><img width="24px" src='logo_mini.png'></span></li>
+        <li class="tab col s5"><a id='PriceTickerUNITab' href="#PriceTickerUNI"> <i style = "vertical-align:middle !Important;" class="material-icons"><img width="24px" src="https://raw.githubusercontent.com/Uniswap/brand-assets/df53e86d0cea2e4cf3761d849e57de44bf85ac52/Uniswap%20Brand%20Assets/Uniswap_icon_pink.png" alt="UNI"></i> Uniswap</a></li>
+        <li class="tab col s5"><a id='PriceTickerSUSHITab' href="#PriceTickerSUSHI" > <i style = "vertical-align:middle !Important;" class="material-icons"><img width="24px" src="https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-32x32.png" alt="SUSHI"></i> Sushiswap</a></li>
+        <li class="tab col s1 theme hide-on-small-only"><i style='vertical-align:middle;' class='material-icons modal-close waves-effect waves-light'>close</i></li>
+    </ul>
+    <div class="modal-content" id="PriceTickerUNI">
+        <div class="card">
+            <div class="card-content" style="padding:18px">
+                <div class="row">
+                    <div class="col s6">
+                        <ul>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="DMF / USDC"><img src="/erc20-icons/dmf.png" alt="dmf"></img><img width="24px" src="/erc20-icons/usdc.png" alt="usdc"></img><span id="ticker_DMFUSDC">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="DMF / POL"><img src="/erc20-icons/dmf.png" alt="dmf"></img><img src="/native-token-icons/pol.png" alt="usdc"></img><span id="ticker_DMFPOL">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="DMF / SMF"><img src="/erc20-icons/dmf.png" alt="dmf"></img><img src="/erc20-icons/smf.png" alt="smf"></img><span id="ticker_DMFSMF">-</span></span></li>
+                        </ul>
+                    </div>
+                    <div class="col s6">
+                        <ul>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="RPF / DMF"><img src="/erc20-icons/rpf.png" alt="rpf"></img><img src="/erc20-icons/dmf.png" alt="dmf"></img><span id="ticker_RPFDMF">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="RGF / DMF"><img src="/erc20-icons/rgf.png" alt="rgf"></img><img src="/erc20-icons/dmf.png" alt="dmf"></img><span id="ticker_RGFDMF">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="RBF / DMF"><img src="/erc20-icons/rbf.png" alt="rbf"></img><img src="/erc20-icons/dmf.png" alt="dmf"></img><span id="ticker_RBFDMF">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="RRF / DMF"><img src="/erc20-icons/rrf.png" alt="rrf"></img><img src="/erc20-icons/dmf.png" alt="dmf"></img><span id="ticker_RRFDMF">-</span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-content" id="PriceTickerSUSHI">
+        <div class="card">
+            <div class="card-content">
+                <div class="row">
+                    <div class="col s6">
+                        <ul>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="DMF / USDC"><img src="/erc20-icons/dmf.png" alt="dmf"></img><img width="24px" src="/erc20-icons/usdc.png" alt="usdc"></img><span id="ticker_DMFUSDC_Sushi">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="DMF / POL"><img src="/erc20-icons/dmf.png" alt="dmf"></img><img src="/native-token-icons/pol.png" alt="usdc"></img><span id="ticker_DMFPOL_Sushi">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="DMF / SMF"><img src="/erc20-icons/dmf.png" alt="dmf"></img><img src="/erc20-icons/smf.png" alt="smf"></img><span id="ticker_DMFSMF_Sushi">-</span></span></li>
+                        </ul>
+                    </div>
+                    <div class="col s6">
+                        <ul>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="RPF / DMF"><img src="/erc20-icons/rpf.png" alt="rpf"></img><img src="/erc20-icons/dmf.png" alt="dmf"></img><span id="ticker_RPFDMF_Sushi">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="RGF / DMF"><img src="/erc20-icons/rgf.png" alt="rgf"></img><img src="/erc20-icons/dmf.png" alt="dmf"></img><span id="ticker_RGFDMF_Sushi">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="RBF / DMF"><img src="/erc20-icons/rbf.png" alt="rbf"></img><img src="/erc20-icons/dmf.png" alt="dmf"></img><span id="ticker_RBFDMF_Sushi">-</span></span></li>
+                            <li><span class="chip tooltipped" data-position="top" data-tooltip="RRF / DMF"><img src="/erc20-icons/rrf.png" alt="rrf"></img><img src="/erc20-icons/dmf.png" alt="dmf"></img><span id="ticker_RRFDMF_Sushi">-</span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="PriceTickerSUSHI"></div>
+</div>
+        
+
+
 <div id="root"></div>
 </div>
 </div>
@@ -176,10 +238,13 @@ setColorTheme("blue-grey");
 
 function setColorTheme(color){
 if(color == "blue-grey"){
+$("ul.tabs a").removeClass("white-grey-tabs");
+$("ul.tabs a").removeClass("white-purple-tabs");
+$("ul.tabs a").addClass("blue-grey-tabs");
+$(".card-content").css({"background-color":"#455a64","color":"#fff"});
+
  $(".account_avatar").css({"background-color":"#455a64"});
-
  $(".select-dropdown").css({"color":"#fff"});
-
  $(".select-dropdown.dropdown-content ").css({"background-color":"#455a64","color":"#fff"});
  $(".dropdown-content li").css({"background-color":"#455a64"});
  $(".dropdown-content a").css({"color":"#fff"});
@@ -204,34 +269,42 @@ $(".theme-title").css({"background-color":"#2d3c46","color":"#26a69a"});
 }
 
 if(color == "white-purple"){
- $(".account_avatar").css({"background-color":"#f5f5f5"});
+$("ul.tabs a").removeClass("white-grey-tabs");
+$("ul.tabs a").removeClass("blue-grey-tabs");
+$("ul.tabs a").addClass("white-purple-tabs");
+$(".card-content").css({"background-color":"#f5f5f5","color":"#fff"});
+
+$(".account_avatar").css({"background-color":"#f5f5f5"});
 $(".theme").css({"background-color":"#dededef2","color":"#263238"});
 $(".tableBorder").css({"border": "1px solid #dededef2"});
 $(".theme-title").css({"background-color":"#e7e7e7","color":"#14181a"});
- 
- $(".select-dropdown").css({"color": "#263238"});
- $(".select-dropdown.dropdown-content ").css({"background-color":"#e7e7e7","color":"#263238"});
-  $(".dropdown-content li").css({"background-color":"#f5f5f5"});
- $(".dropdown-content a").css({"color":"#263238"});
- $(".sidenav").css({"background-color":"#f5f5f5","color":"#263238"});
- $(".sidenav a").css({"color":"#263238"});
- $(".collection-item").css({"background-color":"#eeeeee","color":"#07423f"});
- $(".modal-content").css({"background-color":"#eeeeee","color":"#263238"});
- $(".modal").css({"background-color":"#f5f5f5","color":"#263238"});
- $(".modal-footer").css({"background-color":"#f5f5f5","color":"#263238"});
+
+$(".select-dropdown").css({"color": "#263238"});
+$(".select-dropdown.dropdown-content ").css({"background-color":"#e7e7e7","color":"#263238"});
+$(".dropdown-content li").css({"background-color":"#f5f5f5"});
+$(".dropdown-content a").css({"color":"#263238"});
+$(".sidenav").css({"background-color":"#f5f5f5","color":"#263238"});
+$(".sidenav a").css({"color":"#263238"});
+$(".collection-item").css({"background-color":"#eeeeee","color":"#07423f"});
+$(".modal-content").css({"background-color":"#f5f5f5","color":"#263238"});
+$(".modal").css({"background-color":"#f5f5f5","color":"#263238"});
+$(".modal-footer").css({"background-color":"#f5f5f5","color":"#263238"});
 $(".nav-theme").css({"background-color": "#413855","color":"#e7e7e7"});
 $(".nav-extended").css({"background-color": "#413855","color":"#e7e7e7"});
 $(".page-footer").css({"background-color": "#413855","color": "#e7e7e7"});
-$(".chip").css({"background-color": "#929a9e3d","color":"#121c20c9"});
+$(".chip").css({"background-color": "#70547a","color":"#e7e7e7"});
 $(".collapsible-header").css({"background-color":"#f5f5f5"});
 $(".collapsible").css({"background-color":"#dededef2","color":"#263238"});
 $(".collapsible-body").css({"background-color":"#eeeeee","color":"#263238"});
-
-
 }
 
 if(color == "white-grey"){
- $(".account_avatar").css({"background-color":"#f5f5f5"});
+$("ul.tabs a").removeClass("blue-grey-tabs");
+$("ul.tabs a").removeClass("white-purple-tabs");
+$("ul.tabs a").addClass("white-grey-tabs");
+$(".card-content").css({"background-color":"#f5f5f5","color":"#fff"});
+
+$(".account_avatar").css({"background-color":"#f5f5f5"});
 $(".theme").css({"background-color":"#dededef2","color":"#263238"});
 $(".tableBorder").css({"border": "1px solid #dededef2"});
 $(".theme-title").css({"background-color":"#bdbdbd","color":"#14181a"});
@@ -249,7 +322,7 @@ $(".theme-title").css({"background-color":"#bdbdbd","color":"#14181a"});
 $(".nav-theme").css({"background-color": "#37474f","color":"#bdbdbd"});
 $(".nav-extended").css({"background-color": "#37474f","color":"#bdbdbd"});
 $(".page-footer").css({"background-color": "#37474f","color": "#bdbdbd"});
-$(".chip").css({"background-color": "#656c6f","color":"#121c20c9"});
+$(".chip").css({"background-color": "#656c6f","color":"#bdbdbd"});
 $(".collapsible-header").css({"background-color":"#f5f5f5"});
 $(".collapsible").css({"background-color":"#dededef2","color":"#263238"});
 $(".collapsible-body").css({"background-color":"#eeeeee","color":"#263238"});
@@ -259,27 +332,19 @@ $(".collapsible-body").css({"background-color":"#eeeeee","color":"#263238"});
 function onDocReady(){
 $(".ddt").dropdown({hover:true,width:'100%'});
 $('.sidenav').sidenav({edge:"left"});
+$('#PriceTickerModal').modal({startingTop:"0",endingTop:"10",onOpenEnd:function(){
+    M.Tabs.init(document.getElementById("PriceTickerModalTab"), {duration:50});
+}});
+$('.tabs').tabs();
 $('.tooltipped').tooltip();
+$('.carousel').carousel({
+    dist:-50,
+    shift:48,
+    padding:12,
+    numVisible:7,
+    duration:500,
+});
 setColorTheme(themeColor);
-$('.carousel').carousel({
-dist: -50,
-shift:24,
-padding:12,
-numVisible:7,
-duration:500,
-});
-
-setTimeout(
-() => {
-$('.carousel').carousel({
-dist: -50,
-shift:24,
-padding:12,
-numVisible:7,
-duration:500,
-});
-}
-,50)
 }
 </script>
 

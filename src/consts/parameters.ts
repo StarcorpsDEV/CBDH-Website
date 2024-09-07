@@ -7,6 +7,13 @@ export const client = createThirdwebClient({
   clientId: import.meta.env.VITE_TEMPLATE_CLIENT_ID,
 });
 
+export const DMF_Contract={network:"polygon",address:"0xd5bd4BeEf25b5952a1462e92C73CF8dc5870D683"}
+export const RBF_Contract={network:"polygon",address:"0x512037B66BacD1b020AA439e159934095Df8A2C8"}
+export const RRF_Contract={network:"polygon",address:"0x7F8A9B97d252E76919eb70fe48cE78835af7a6D9"}
+export const RGF_Contract={network:"polygon",address:"0x645Cb7A052b178cbB4eDCF9bc4A28F9Fcc67b5A7"}
+export const RPF_Contract={network:"polygon",address:"0x6238F788a7291f5D1b4786F7CE0835468cd84fBa"}
+export const SMF_Contract={network:"polygon",address:"0x1fD0E55C66B42be30793Eae30DbCdB8A8184DF42"}
+
 export const DMFSB_ADDRESS = "0xd4bd30B0C6143f352b1a4d138e4ac231e7200BA7"
 export const SMFSB_ADDRESS = "0x37B1c0f1648aA496b04657c8cA639e11731D737b"
 export const RPFSB_ADDRESS = "0x303060B9ec801D809C660687D1e5BAA540b40B62"
@@ -145,7 +152,7 @@ export const RBF_Aragon_DAO = "0x35069486d0f31e7c14b235011c73f4dc1282a9be"
 
 export const liquidity_pool_interface = "https://coinmarketcap.com/dexscan/polygon/"
 
-export const DMFMATIC_Sushi = "0xe44daf2772bc1334aa64b150d55c8a3555221cb7"
+export const DMFPOL_Sushi = "0xe44daf2772bc1334aa64b150d55c8a3555221cb7"
 export const DMFUSDC_Uniswap = "0xe9d83264765d264dfa4732402a053f180763c9a2"
 
 export const RBFDMF_Uniswap = "0xe7f863c23143af80c4d6ff2fc819c1a96a9bdd5b"
@@ -153,7 +160,7 @@ export const RRFDMF_Uniswap = "0x9d4c66834e8089e448a2aac58ba62c7dd516a18d"
 export const RGFDMF_Uniswap = "0x427e19a08255c9943595ea63cad79cfc3a363b2d"
 export const RPFDMF_Uniswap = "0xacdd0fad49cbba08e9f7d337045af0b16c701046"
 
-export const DMFMATIC_Sushi_APP = "https://badgerscollectif-dmfmatic-sushi.surge.sh/"
+export const DMFPOL_Sushi_APP = "https://badgerscollectif-dmfPOL-sushi.surge.sh/"
 export const DMFUSDC_Uniswap_APP = "https://badgerscollectif-dmfusdc-uniswap.surge.sh/"
 export const RBFDMF_Uniswap_APP = "https://badgerscollectif-rbfdmf-uniswap.surge.sh/"
 export const RRFDMF_Uniswap_APP = "https://badgerscollectif-rrfdmf-uniswap.surge.sh/"

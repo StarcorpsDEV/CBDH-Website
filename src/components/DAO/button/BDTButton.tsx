@@ -1,6 +1,6 @@
 
 
-import { DMFUSDC_Uniswap_APP, DMFMATIC_Sushi_APP, liquidity_pool_interface, DMFUSDC_Uniswap, DMFMATIC_Sushi, BDT_Staking_Pool_URL, BDT_Aragon_DAO, DAO_interface } from "@/consts/parameters";
+import { DMFUSDC_Uniswap_APP, DMFPOL_Sushi_APP, liquidity_pool_interface, DMFUSDC_Uniswap, DMFPOL_Sushi, BDT_Staking_Pool_URL, BDT_Aragon_DAO, DAO_interface } from "@/consts/parameters";
 
 export default function BDT(){
   return (
@@ -25,8 +25,8 @@ export default function BDT(){
           <div class='col s6 m4'>
           <a style='padding:12px; padding-right:24px; padding-left:24px; margin:12px; border:1px solid #806868; border-radius:12px;' 
           class='font-bold text-transparent transition bg-clip-text tw-gradient-gold pointer hover'
-          id = 'DMFMATIC_Sushi'>
-          DMFMATIC</a>
+          id = 'DMFPOL_Sushi'>
+          DMFPOL</a>
           </div>
           </div>
           </div>
@@ -37,8 +37,8 @@ export default function BDT(){
           $("#DMFUSDC_Uni").on("click", function(){
             $("#BDT").html("<embed src="+DMFUSDC_Uniswap_APP+" style='width:100% !Important; min-height:700px !Important;'></embed>")
           })
-          $("#DMFMATIC_Sushi").on("click", function(){
-            $("#BDT").html("<embed src="+DMFMATIC_Sushi_APP+" style='width:100% !Important; min-height:700px !Important;'></embed>")
+          $("#DMFPOL_Sushi").on("click", function(){
+            $("#BDT").html("<embed src="+DMFPOL_Sushi_APP+" style='width:100% !Important; min-height:700px !Important;'></embed>")
           })
           
         }
@@ -64,8 +64,8 @@ export default function BDT(){
           </div>
           <div class='col s6 m4'>
           <a style='padding:12px; padding-right:24px; padding-left:24px; margin:12px; border:1px solid #806868; border-radius:12px;' 
-          class='font-bold text-transparent transition bg-clip-text tw-gradient-gold pointer hover' target='_blank' href='${liquidity_pool_interface+DMFMATIC_Sushi}'>
-          $DMFMATIC</a>
+          class='font-bold text-transparent transition bg-clip-text tw-gradient-gold pointer hover' target='_blank' href='${liquidity_pool_interface+DMFPOL_Sushi}'>
+          $DMFPOL</a>
           </div>
           </div>
           </div>

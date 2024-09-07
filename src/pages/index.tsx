@@ -1,8 +1,6 @@
 import Carousel from "../components/Carousel"
 import Listing from "../components/Listing";
 import ListingGenesis from "../components/ListingGenesis";
-import { RFGB_tw_embed } from "@/consts/parameters";
-
 function App() {
 return(
 <div className="row">
@@ -39,14 +37,13 @@ return(
 			<a
 			className="text-transparent transition bg-clip-text tw-gradient-bronze"
 			>
-			For OG NFTs Collectors the Genesis Badgers on Ethereum.
+			For O.G. NFTs Collectors the Genesis Badgers on Ethereum.
 			</a>
 			</div>
-		</div>
+	</div>
    	 <div className="col s12">
       <ListingGenesis/>
 	</div>
-
 
 </div>
 </div>
