@@ -1,6 +1,6 @@
 
 
-import { DMFUSDC_Uniswap_APP, DMFPOL_Sushi_APP, RBFDMF_Uniswap_APP, liquidity_pool_interface,DMFUSDC_Uniswap, DMFPOL_Sushi, RBFDMF_Uniswap, RBF_Staking_Pool_URL, DAO_interface, RBF_Aragon_DAO } from "@/consts/parameters";
+import { DMFUSDC_Uniswap_APP, DMFPOL_Sushi_APP, DMFRBF_Uniswap_APP, liquidity_pool_interface,DMFUSDC_Uniswap, DMFPOL_Sushi, DMFRBF_Uniswap, RBF_Staking_Pool_URL, DAO_interface, RBF_Aragon_DAO } from "@/consts/parameters";
 
 export default function RBF(){
   return (
@@ -31,8 +31,8 @@ export default function RBF(){
           <div class='col s6 m4'>
           <a style='padding:12px; padding-right:24px; padding-left:24px; margin:12px; border:1px solid #806868; border-radius:12px;' 
           class='font-bold text-transparent transition bg-clip-text tw-gradient-blue pointer hover'
-          id = 'RBFDMF_Uni'>
-          RBFDMF</a>
+          id = 'DMFRBF_Uni'>
+          DMFRBF</a>
           </div>
           </div>
           </div>
@@ -46,8 +46,8 @@ export default function RBF(){
           $("#DMFPOL_Sushi").on("click", function(){
             $("#RBF").html("<embed src="+DMFPOL_Sushi_APP+" style='width:100% !Important; min-height:700px !Important;'></embed>")
           })
-          $("#RBFDMF_Uni").on("click", function(){
-            $("#RBF").html("<embed src="+RBFDMF_Uniswap_APP+" style='width:100% !Important; min-height:700px !Important;'></embed>")
+          $("#DMFRBF_Uni").on("click", function(){
+            $("#RBF").html("<embed src="+DMFRBF_Uniswap_APP+" style='width:100% !Important; min-height:700px !Important;'></embed>")
           })
        }
       } 
@@ -77,8 +77,8 @@ export default function RBF(){
           </div>
           <div class='col s6 m4'>
           <a style='padding:12px; padding-right:24px; padding-left:24px; margin:12px; border:1px solid #806868; border-radius:12px;' 
-          class='font-bold text-transparent transition bg-clip-text tw-gradient-blue pointer hover' target='_blank' href='${liquidity_pool_interface+RBFDMF_Uniswap}'>
-          $RBFDMF</a>
+          class='font-bold text-transparent transition bg-clip-text tw-gradient-blue pointer hover' target='_blank' href='${liquidity_pool_interface+DMFRBF_Uniswap}'>
+          $DMFRBF</a>
           </div>
           </div>
           </div>
