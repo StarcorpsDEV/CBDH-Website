@@ -45,7 +45,7 @@ const NFTPage = () => {
         <title>{nft?.metadata.name}</title>
       </Helmet>
       
-      <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 md:flex-row ">
+      <div className="card-content mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 md:flex-row ">
         <div className="flex flex-col px-10 md:min-h-screen md:w-1/2 ">
     <Breadcrumb url={"/RBFSB"} nftName={"Blue Badger"} nftId={String(id)}/>
           {nft ? (
@@ -208,7 +208,7 @@ const NFTPage = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4 flex flex-col gap-4">
+      <div className="mt-4 card-content flex flex-col gap-4">
         <RBFSBGallery/>
       </div>
     </div>
